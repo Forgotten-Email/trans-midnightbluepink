@@ -1,9 +1,9 @@
 # ForgottenEmail's Dotfiles (WIP)
- 
-![Screenshot_2022-01-30-03-07-52_1360x768](https://user-images.githubusercontent.com/96489361/151705347-68689fb0-c147-4114-b2db-ccbd1377d089.png)
 
-![Screenshot_2022-01-30-02-38-53_1360x768](https://user-images.githubusercontent.com/96489361/151704482-e77cf2d0-7019-4024-9224-ac1ed780f24d.png)
+![Screenshot_2022-01-30-10-49-26_1360x768](https://user-images.githubusercontent.com/96489361/151721389-881c5068-be1d-40f9-b18c-54b53264b55a.png)
 
-![Screenshot_2022-01-30-03-01-15_1360x768](https://user-images.githubusercontent.com/96489361/151705392-a7f4233e-ad04-41de-b0a5-306836aab1a7.png)
+![Screenshot_2022-01-30-10-51-06_1360x768](https://user-images.githubusercontent.com/96489361/151721378-1ae65e37-9ab2-45a8-ac6b-1accfe207bf7.png)
 
-![Screenshot_2022-01-30-02-32-55_1360x768](https://user-images.githubusercontent.com/96489361/151704488-1ce4e7a0-b8d0-4a04-b5a9-9f61c4f34e5f.png)
+![Screenshot_2022-01-30-10-45-16_1360x768](https://user-images.githubusercontent.com/96489361/151721406-b6d1d257-34db-4da2-a29f-6642f196e0dd.png)
+
+![Screenshot_2022-01-30-10-52-19_1360x768](https://user-images.githubusercontent.com/96489361/151721376-91c127be-1fbd-4e70-9368-067ea57ca723.png)
