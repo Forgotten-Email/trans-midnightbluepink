@@ -44,7 +44,7 @@ XF86Audio{RaiseVolume,LowerVolume,Mute}
 
 #Multi-Media Controls
 XF86Audio{Prev,Play,Next}
-	{mpc prev,mpc toggle,playerctl -p mpd next}
+	{mpc prev,mpc toggle,mpc next}
 
 # Brightness controls
 XF86MonBrightness{Up,Down}
