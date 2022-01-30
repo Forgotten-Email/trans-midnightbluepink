@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=oomox-midnight-bluepink
+Comment=Dark Blue Theme With Pink Accents. Inspired by Midnight-BlueNight.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=oomox-midnight-bluepink
+GtkTheme=oomox-midnight-bluepink
+IconTheme=oomox-midnight-bluepink
+MetacityTheme=oomox-midnight-bluepink

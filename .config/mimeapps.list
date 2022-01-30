@@ -1,0 +1,12 @@
+[Added Associations]
+application/x-shellscript=nvim.desktop;geany.desktop;
+application/gzip=nvim.desktop;
+image/png=viewnior.desktop;krita_png.desktop;
+application/x-raw-disk-image=geany.desktop;
+text/plain=nvim.desktop;geany.desktop;
+application/x-object=geany.desktop;
+text/html=geany.desktop;firefox.desktop;
+video/mp4=mpv.desktop;
+
+[Default Applications]
+x-scheme-handler/etcher=balena-etcher-electron.desktop

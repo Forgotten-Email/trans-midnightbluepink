@@ -1,0 +1,12 @@
+neww
+set -g status off
+split-window -v
+select-pane -t 1
+send-keys "cava" C-m
+
+select-pane -t 0
+send-keys "$HOME/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp-ueberzug" C-m
+
+resize-pane -t 0 -x 49 -y 23
+set-hook client-resized 'resize-pane -t 0 -x 49 -y 23
+select-pane -t 1

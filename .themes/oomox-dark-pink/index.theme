@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=oomox-dark-pink
+Comment=Black Theme With Pink Accents. Works Best on OLED Displays.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=oomox-dark-pink
+GtkTheme=oomox-dark-pink
+IconTheme=oomox-dark-pink
+MetacityTheme=oomox-dark-pink

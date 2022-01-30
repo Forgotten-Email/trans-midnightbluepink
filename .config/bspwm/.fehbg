@@ -1,0 +1,5 @@
+#!/bin/sh
+
+#Notes: For wallpaper5 and wallpaper6, change --bg-center/--bg-scale to --bg-tile
+
+feh --no-fehbg --bg-scale "$HOME/.config/bspwm/wallpaper3.png"
