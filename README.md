@@ -1,4 +1,4 @@
-# ForgottenEmail's dotfiles (WIP)
+# ForgottenEmail's Dotfiles (WIP)
  
 ![Screenshot_2022-01-30-03-07-52_1360x768](https://user-images.githubusercontent.com/96489361/151705347-68689fb0-c147-4114-b2db-ccbd1377d089.png)
 
