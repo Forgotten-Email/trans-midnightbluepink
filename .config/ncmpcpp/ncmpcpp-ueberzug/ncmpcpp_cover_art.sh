@@ -10,8 +10,8 @@ padding_right=1
 max_width=25
 reserved_playlist_cols=30
 reserved_cols_in_percent="false"
-force_square="false"
-square_alignment="center"
+force_square="true"
+square_alignment="top"
 
 left_aligned="true"
 padding_left=1
