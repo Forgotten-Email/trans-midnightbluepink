@@ -48,7 +48,7 @@ for i in ${filem[@]}; do
     bspc rule -a $i desktop='^3' follow=on focus=on; done
 
 # workspace 4 (Text Editor)
-declare -a office=(Code Geany)
+declare -a office=(Code Geany libreoffice-writer)
 for i in ${office[@]}; do
     bspc rule -a $i desktop='^4' follow=on focus=on; done
 
@@ -59,7 +59,7 @@ for i in ${media[@]}; do
     bspc rule -a $i desktop='^5' follow=on focus=on; done
 
 # workspace 6 (Messaging)
-declare -a messaging=(ArmCord)
+declare -a messaging=(ArmCord discord)
 for i in ${messaging[@]}; do
     bspc rule -a $i desktop='^6' follow=on focus=on; done
 
@@ -90,8 +90,8 @@ $HOME/.screenlayout/monitor.sh
 # Launch notification daemon
 dunst -config $HOME/.config/bspwm/dunstrc &
 
-# Launch MPD (done here because mpd.service won't behave)
-mpd
+# Launch MPD (use this if mpd.service won't behave)
+#mpd $HOME/.config/mpd/mpd.conf &
 
 # Enable Super Keys For Menu
 ksuperkey -e 'Super_L=Alt_L|F1' &
@@ -119,5 +119,5 @@ picom --config $HOME/.config/bspwm/picom.conf &
 sed -i "s/theme =.*$/theme = \"chadracula\",/g" $HOME/.config/nvim/lua/chadrc.lua
 
 # change xfce4-terminal colorscheme
-XFCE_TERM_PATH="$HOME/.config/xfce4/terminal"
-cp "$XFCE_TERM_PATH"/colorschemes/dracula "$XFCE_TERM_PATH"/terminalrc
+#XFCE_TERM_PATH="$HOME/.config/xfce4/terminal"
+#cp "$XFCE_TERM_PATH"/colorschemes/dracula "$XFCE_TERM_PATH"/terminalrc
