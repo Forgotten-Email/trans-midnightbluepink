@@ -35,8 +35,8 @@ alt + {e,l}
     {edit-configs, quick-links}
 
 # Launch Applications
-super + shift + {f,w,r,g,c,d,s,n,v}
-    {thunar,firefox,terminal -e ranger,geany,code,discord,spotify,terminal -e ncmpcpp,virtualbox}
+super + shift + {f,w,r,g,c,n,d,s,m,v}
+    {thunar,firefox,terminal -e ranger,geany,code,terminal -e nvim,discord,spotify,terminal -e ncmpcpp,virtualbox}
 
 # Volume controls
 XF86Audio{RaiseVolume,LowerVolume,Mute}
