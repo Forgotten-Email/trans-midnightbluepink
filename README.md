@@ -12,3 +12,4 @@
 - Add a list of dependencies
 - Make an install script
 - Remove references to old directories in the polybar module files
+- Make independent of Axyl OS
