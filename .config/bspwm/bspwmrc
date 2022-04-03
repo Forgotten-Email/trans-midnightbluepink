@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# Sets Monitor Resolution
+$HOME/.screenlayout/monitor.sh
+
 # Restore wallpaper
 bash $HOME/.config/bspwm/.fehbg
 
@@ -59,7 +62,7 @@ for i in ${media[@]}; do
     bspc rule -a $i desktop='^5' follow=on focus=on; done
 
 # workspace 6 (Messaging)
-declare -a messaging=(ArmCord discord)
+declare -a messaging=(ArmCord)
 for i in ${messaging[@]}; do
     bspc rule -a $i desktop='^6' follow=on focus=on; done
 
@@ -70,7 +73,7 @@ for i in ${settings[@]}; do
     bspc rule -a $i desktop='^7' follow=on focus=on; done
 
 # floating windows
-declare -a floats=(Alafloat Lxappearance Arandr \
+declare -a floats=(Alafloat Lxappearance Arandr Galculator \
 Viewnior Pcmanfm feh Nm-connection-editor Matplotlib Yad MEGASync)
 for i in ${floats[@]}; do
   bspc rule -a $i state=floating follow=on focus=on; done
@@ -80,9 +83,6 @@ for i in ${floats[@]}; do
 # Kill if already running
 killall -9 picom sxhkd dunst xfce4-power-manager ksuperkey eww
 
-# Sets Monitor Resolution
-$HOME/.screenlayout/monitor.sh
-
 # Launch Conkeww
 #sed -i "s/colors\/color-.*/colors\/color-tokyo.yuck\")/g" $HOME/.config/conkeww/eww.yuck
 #eww --config $HOME/.config/conkeww/ open conkeww-main
@@ -90,8 +90,8 @@ $HOME/.screenlayout/monitor.sh
 # Launch notification daemon
 dunst -config $HOME/.config/bspwm/dunstrc &
 
-# Launch MPD (use this if mpd.service won't behave)
-#mpd $HOME/.config/mpd/mpd.conf &
+# Launch MPD (done here because mpd.service won't behave)
+mpd
 
 # Enable Super Keys For Menu
 ksuperkey -e 'Super_L=Alt_L|F1' &
@@ -115,9 +115,8 @@ udiskie &
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom --config $HOME/.config/bspwm/picom.conf &
 
-# replace neovim colorscheme
-sed -i "s/theme =.*$/theme = \"chadracula\",/g" $HOME/.config/nvim/lua/chadrc.lua
+## replace neovim colorscheme
+#sed -i "s/theme =.*$/theme = \"chadracula\",/g" $HOME/.config/nvim/lua/chadrc.lua
 
-# change xfce4-terminal colorscheme
+## change xfce4-terminal colorscheme
 #XFCE_TERM_PATH="$HOME/.config/xfce4/terminal"
-#cp "$XFCE_TERM_PATH"/colorschemes/dracula "$XFCE_TERM_PATH"/terminalrc
