@@ -1,0 +1,32 @@
+#!/bin/env bash
+
+# A simple link shortcut script
+# Created by: (@Kungger)
+
+source colors
+
+# colors and font
+FONT="JetBrainsMono Nerd Font:size=12"
+
+declare -A links=(
+["DuckDuckGo"]="start.duckduckgo.com"
+["Arch Linux"]="archlinux.org"
+["GitHub"]="github.com/login"
+["GitLab"]="gitlab.com/"
+["Gmail"]="mail.google.com/"
+["ProtonMail"]="mail.protonmail.com"
+["Reddit"]="reddit.com/login"
+["YouTube"]="youtube.com"
+["Discord"]="discord.com/app"
+["Invidious"]="yewtu.be"
+["Microsoft Teams"]="teams.microsoft.com"
+)
+
+choice=$(printf '%s\n' "${!links[@]}" | sort -u | dmenu -c -i -l 10 -nb "$bg" -nf "$fg" -sb "$altbg" -sf "$fg" -fn "$FONT" -p 'Quick Links:')
+
+# opens the link using default browser.. make sure you installed one :)
+if [ "$choice" ]; then
+    xdg-open "https://${links[$choice]}"
+else
+    echo "Exiting..."; exit 1
+fi
