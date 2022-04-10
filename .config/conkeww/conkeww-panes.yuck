@@ -44,6 +44,8 @@ Time:      === ${date}"
 [S]+[Shft]+F    === Thunar
 [S]+[Shft]+G    === Geany
 [S]+[Shft]+R    === Ranger
+[S]+[Shft]+N    === Ncmpcpp
+[S]+[Shft]+D    === Discord
 [PrtSc]         === Screenshot"
       )
     )
