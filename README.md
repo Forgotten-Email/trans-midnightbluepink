@@ -10,6 +10,7 @@
 
 ## To Do
 - Add a list of dependencies
+- Update screenshots
 - Make an install script
 - Remove references to old directories in the polybar module files
 - Make independent of Axyl OS
