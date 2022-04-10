@@ -8,6 +8,16 @@
 
 ![Screenshot_2022-01-30-10-52-19_1360x768](https://user-images.githubusercontent.com/96489361/151721376-91c127be-1fbd-4e70-9368-067ea57ca723.png)
 
+## Notes
+- If polybar is too small change `height` in `.config/polybar/config.ini` to a suitable:
+```
+; Dimension defined as pixel value (e.g. 35) or percentage (e.g. 50%),
+; the percentage can optionally be extended with a pixel offset like so:
+; 50%:-10, this will result in a width or height of 50% minus 10 pixels
+width = 100%
+height = 25
+```
+
 ## To Do
 - Add a list of dependencies
 - Update screenshots
