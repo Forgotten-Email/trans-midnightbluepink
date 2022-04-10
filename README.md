@@ -17,7 +17,12 @@
 width = 100%
 height = 25
 ```
-
+- To disable Conkeww comment out these lines in `~/.config/bspwm/bspwmrc`:
+```
+# Launch Conkeww
+#sed -i "s/colors\/color-.*/colors\/color-one-dark.yuck\")/g" $HOME/.config/conkeww/eww.yuck
+#eww --config $HOME/.config/conkeww/ open conkeww-main
+```
 ## To Do
 - Add a list of dependencies
 - Update screenshots
