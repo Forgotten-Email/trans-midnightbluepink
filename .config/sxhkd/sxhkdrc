@@ -18,6 +18,10 @@ super + shift + Return
 super + shift + t
     terminal -m
 
+# Toggle Conkeww
+super + shift + e
+    toggle-conkeww
+
 # j4 dmenu
 alt + F1
     j4-dmenu
