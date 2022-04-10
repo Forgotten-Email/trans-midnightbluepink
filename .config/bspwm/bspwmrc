@@ -41,7 +41,7 @@ for i in ${terminal[@]}; do
     bspc rule -a $i desktop='^1' follow=on focus=on; done
 
 # workspace 2 (Internet Browser)
-declare -a web=(firefox discord)
+declare -a web=(firefox)
 for i in ${web[@]}; do
     bspc rule -a $i desktop='^2' follow=on focus=on; done
 
@@ -62,7 +62,7 @@ for i in ${media[@]}; do
     bspc rule -a $i desktop='^5' follow=on focus=on; done
 
 # workspace 6 (Messaging)
-declare -a messaging=(ArmCord)
+declare -a messaging=(ArmCord discord)
 for i in ${messaging[@]}; do
     bspc rule -a $i desktop='^6' follow=on focus=on; done
 
@@ -74,9 +74,10 @@ for i in ${settings[@]}; do
 
 # floating windows
 declare -a floats=(Alafloat Lxappearance Arandr Galculator \
-Viewnior Pcmanfm feh Nm-connection-editor Matplotlib Yad MEGASync)
+Viewnior Pcmanfm feh Nm-connection-editor Matplotlib Yad MEGAsync)
 for i in ${floats[@]}; do
   bspc rule -a $i state=floating follow=on focus=on; done
+  bspc rule -a MEGAsync =402x564+0.1+0.1
 
 ## Autostart
 
@@ -84,8 +85,8 @@ for i in ${floats[@]}; do
 killall -9 picom sxhkd dunst xfce4-power-manager ksuperkey eww
 
 # Launch Conkeww
-#sed -i "s/colors\/color-.*/colors\/color-tokyo.yuck\")/g" $HOME/.config/conkeww/eww.yuck
-#eww --config $HOME/.config/conkeww/ open conkeww-main
+sed -i "s/colors\/color-.*/colors\/color-tokyo.yuck\")/g" $HOME/.config/conkeww/eww.yuck
+eww --config $HOME/.config/conkeww/ open conkeww-main
 
 # Launch notification daemon
 dunst -config $HOME/.config/bspwm/dunstrc &
