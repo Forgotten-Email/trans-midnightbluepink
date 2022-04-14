@@ -78,3 +78,4 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
